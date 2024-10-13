@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunaire - Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lunaire - Cosméticos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="products" class="products-section">
+        <h2>Nossos Produtos</h2>
+        <div class="product-grid">
+            <!-- Produto 1 -->
+            <div class="product-item">
+                <img src="product1.jpg" alt="Batom Lunaire">
+                <h3>Batom Lunaire</h3>
+                <p class="price">R$29,90</p>
+                <p class="description">Batom de longa duração com acabamento suave e hidratante.</p>
+                <p class="rating">⭐⭐⭐⭐☆</p>
+                <button onclick="addToCart('Batom Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="product-item">
+                <img src="product2.jpg" alt="Base Facial Lunaire">
+                <h3>Base Facial Lunaire</h3>
+                <p class="price">R$59,90</p>
+                <p class="description">Base de alta cobertura que proporciona um acabamento impecável.</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <button onclick="addToCart('Base Facial Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 3 -->
+            <div class="product-item">
+                <img src="product3.jpg" alt="Creme Hidratante Lunaire">
+                <h3>Creme Hidratante Lunaire</h3>
+                <p class="price">R$39,90</p>
+                <p class="description">Hidratação profunda que deixa a pele macia e radiante.</p>
+                <p class="rating">⭐⭐⭐⭐☆</p>
+                <button onclick="addToCart('Creme Hidratante Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="product4.jpg" alt="Sérum Facial Lunaire">
+                <h3>Sérum Facial Lunaire</h3>
+                <p class="price">R$42,90</p>
+                <p class="description">Cuidado intenso que te deixa com a pele macia e sem olheiras o dia todo.</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <button onclick="addToCart('Sérum Facial Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="product5.jpg" alt="Iluminador Facial Lunaire">
+                <h3>Iluminador Facial Lunaire</h3>
+                <p class="price">R$49,90</p>
+                <p class="description">O iluminador que deixará sua pele radiante.</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <button onclick="addToCart('Iluminador Facial Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="product6.jpg" alt="Paleta de Sombras Lunaire">
+                <h3>Paleta de Sombras Lunaire</h3>
+                <p class="price">R$69,90</p>
+                <p class="description">A paleta que trará cor e destaque ao seu olhar proporcionando um toque de poder e felicidade.</p>
+                <p class="rating">⭐⭐⭐⭐☆</p>
+                <button onclick="addToCart('Paleta de Sombras Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="product7.jpg" alt="Máscara de Cílios Lunaire">
+                <h3>Máscara de Cílios Lunaire</h3>
+                <p class="price">R$34,90</p>
+                <p class="description">Máscara de Cílios de longa duração e a prova d'água para poder aproveitar seu dia sem preocupação.</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <button onclick="addToCart('Máscara de Cílios Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="product8.jpg" alt="Delineador Lunaire">
+                <h3>Delineador Lunaire</h3>
+                <p class="price">R$24,90</p>
+                <p class="description">O delineador que lhe proporcionará um toque felino e misterioso.</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <button onclick="addToCart('Delineador Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="product9.jpg" alt="Pó Compacto Lunaire">
+                <h3>Pó Compacto Lunaire</h3>
+                <p class="price">R$54,90</p>
+                <p class="description">Cobertura seca que deixa a pele macia e radiante sem tirar sua cor.</p>
+                <p class="rating">⭐⭐⭐⭐☆</p>
+                <button onclick="addToCart('Pó Compacto Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="product10.jpg" alt="Brush Lunaire">
+                <h3>Brush Lunaire</h3>
+                <p class="price">R$29,90</p>
+                <p class="description">Pele com aspecto de saúde e ânimo  independente da situação</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <button onclick="addToCart('Brush Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produtos adicionais seguirão a mesma estrutura... -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
