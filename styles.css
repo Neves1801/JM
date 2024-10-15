@@ -7,16 +7,32 @@
 }
 
 body {
-    background-color: #e8f5e9; /* Verde claro */
+    background-color: #e8f5e9;
     color: #333;
 }
 
-/* Estilo do cabeçalho e navegação */
+/* Estilo para a logo */
+.logo {
+    width: 100px; /* Ajuste o tamanho da logo aqui */
+    height: auto;
+    margin-right: 15px; /* Espaçamento entre a logo e o título */
+    vertical-align: middle;
+}
+
+/* Estilo do cabeçalho */
 header {
     background-color: #ffc0cb; /* Rosa claro */
     color: #333;
     padding: 10px 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui os itens para os cantos opostos */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a logo e o título */
 }
 
 header h1 {
@@ -25,16 +41,20 @@ header h1 {
     color: #d4af37; /* Dourado */
 }
 
+nav {
+    display: flex;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: flex-end; /* Alinha o menu à direita */
+    gap: 15px; /* Espaçamento entre as opções do menu */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul li a {
@@ -46,18 +66,66 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Seções */
+/* Seções gerais */
 section {
-    padding: 40px 20px;
+    padding: 40px 20px; /* Ajustado para uma melhor responsividade */
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+/* Estilo para a seção Home */
+#home {
+    text-align: center; /* Centraliza cabeçalhos e conteúdo */
+}
+
+#home h2, #home h3 {
     color: #d4af37; /* Dourado */
 }
 
-/* Grade de produtos */
+#home p {
+    text-align: justify; /* Justifica o texto */
+    margin: 0 auto 20px auto;
+    max-width: 800px; /* Limita a largura máxima para uma melhor legibilidade */
+}
+
+#home ul {
+    list-style: none; /* Remove os marcadores das listas */
+    padding: 0;
+    text-align: left; /* Deixa a lista à esquerda para manter a estrutura */
+    margin: 0 auto; /* Centraliza a lista */
+}
+
+#home ul li {
+    margin: 10px 0;
+    text-align: justify; /* Justifica o texto dentro da lista */
+}
+
+/* Estilo para a seção Sobre Nós */
+#sobre-nos {
+    text-align: center; /* Centraliza cabeçalhos e conteúdo */
+}
+
+#sobre-nos h2, #sobre-nos h3 {
+    color: #d4af37; /* Dourado */
+}
+
+#sobre-nos p {
+    text-align: justify; /* Justifica o texto */
+    margin: 0 auto 20px auto;
+    max-width: 800px; /* Limita a largura máxima para uma melhor legibilidade */
+}
+
+#sobre-nos ul {
+    list-style: none; /* Remove os marcadores das listas */
+    padding: 0;
+    text-align: left; /* Deixa a lista à esquerda para manter a estrutura */
+    margin: 0 auto; /* Centraliza a lista */
+}
+
+#sobre-nos ul li {
+    margin: 10px 0;
+    text-align: justify; /* Justifica o texto dentro da lista */
+}
+
+/* Estilo de produtos */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +134,10 @@ h2 {
 }
 
 .product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -154,5 +226,78 @@ h2 {
 }
 
 #cart .checkout-btn:hover {
+    background-color: #f8a5b2; /* Tom de rosa mais escuro */
+}
+
+/* Estilo para a seção de contato */
+#contato {
+    padding: 40px 20px;
+    background-color: #e8f5e9; /* Mesma cor de fundo do site */
+}
+
+#contato h2 {
+    color: #d4af37; /* Dourado */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o formulário */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d4af37; /* Destaque dourado */
+    outline: none;
+    background-color: #fff;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffc0cb; /* Rosa claro */
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
     background-color: #f8a5b2; /* Tom de rosa mais escuro */
 }
