@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <img src="logo.jpg" alt="Logo JM Store" class="logo">
         <h1>JM Store - Cosméticos</h1>
         <nav>
             <ul>
@@ -18,9 +19,29 @@
             </ul>
         </nav>
     </header>
-    <section class="contact-section">
+    <section id="contato">
         <h2>Contato</h2>
-        <p>Entre em contato conosco através do e-mail: contato@jmstore.com.br ou pelo telefone: (45) 99101-6029.</p>
+        <p>Entre em contato conosco preenchendo o formulário abaixo. Estamos aqui para ajudar!</p>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Mensagem</button>
+        </form>
     </section>
+    
 </body>
 </html>
